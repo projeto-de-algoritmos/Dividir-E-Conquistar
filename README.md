@@ -19,7 +19,18 @@
 
 <p> Descrição do projeto </p>
 
-O projeto tem o intuito de, utilizando Harry Potter como contexto, criar um torneio de quadribol, onde serão disponibilizadas quatro opções de times - as casas de Hogwarts Grifinória, Sonserina, Corvinal e Lufa Lufa - e, a partir das disputas e as pontuações somadas por cada casa, e a aplicação do algoritmo Mediana das Medianas, conseguir se chegar ao pódio do primeiro ao quarto lugar.
+O projeto tem o intuito de, utilizando Harry Potter como contexto, criar um torneio de quadribol, onde serão disponibilizadas quatro opções de times - as casas de Hogwarts Grifinória, Sonserina, Corvinal e Lufa Lufa. Neste torneio, ocorrerão quatro fases:
+- Equipe x Equipe
+- Dupla x Dupla
+- Quarteto x Quarteto
+- Equipe x Equipe
+
+As pontuações se darão da forma:
+- Venceu: 3 pontos
+- Empate: 1 ponto (para cada equipe)
+- Perdeu: 0 pontos
+
+Ao final do torneio, o algoritmo de Mediana das Medianas é aplicado para se descobrir a média de pontos de cada casa, e, a partir disso, conseguir se chegar a um vencedor - a equipe que possuir mais pontos.
 
 ### Interface: 
 
