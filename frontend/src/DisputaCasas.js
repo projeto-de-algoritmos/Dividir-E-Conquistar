@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const PlacaresCasas = () => {
   
@@ -36,7 +37,9 @@ const PlacaresCasas = () => {
     </div>
     <div className="buttons">
     <button>Gerar Vencedor</button>
-    <button>Começar Partidas</button>
+    <Link to="/gere-partidas">
+          <button>Começar Partidas</button>
+    </Link>
     </div>
     </div>
   );
