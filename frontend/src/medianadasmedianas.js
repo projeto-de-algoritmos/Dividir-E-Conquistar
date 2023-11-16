@@ -51,7 +51,6 @@ class MedianaDasMedianas {
       }
   }
   
-  
 const torneio = new MedianaDasMedianas(fasesDePontuacoes);
 torneio.calcularParaCasa('Grifinória');
 torneio.calcularParaCasa('Sonserina');
