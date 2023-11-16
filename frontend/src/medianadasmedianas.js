@@ -1,3 +1,6 @@
+const { fasesDePontuacoes } = require('./pontuacoes.dto');
+
+
 class MedianaDasMedianas {
     constructor(fases) {
       this.fases = fases;
@@ -47,48 +50,15 @@ class MedianaDasMedianas {
         return medianaDasMedianas;
       }
   }
+  
+  
+const torneio = new MedianaDasMedianas(fasesDePontuacoes);
+torneio.calcularParaCasa('Grifinória');
+torneio.calcularParaCasa('Sonserina');
+torneio.calcularParaCasa('LufaLufa');
+torneio.calcularParaCasa('Corvinal');
 
-  // Exemplo de uso da classe MedianaDasMedianas
-  const fasesDePontuacoes = [
-    {
-      'Grifinória vs. Sonserina': [3, 0],
-      'Grifinória vs. LufaLufa': [1, 3],
-      'Grifinória vs. Corvinal': [0, 3],
-      'Sonserina vs. LufaLufa': [1, 1],
-      'Sonserina vs. Corvinal': [3, 0],
-      'LufaLufa vs. Corvinal': [0, 3]
-    },
-    {
-      'Grifinória vs. Sonserina': [0, 3],
-      'Grifinória vs. LufaLufa': [0, 3],
-      'Grifinória vs. Corvinal': [0, 3],
-      'Sonserina vs. LufaLufa': [1, 1],
-      'Sonserina vs. Corvinal': [3, 0],
-      'LufaLufa vs. Corvinal': [0, 3]
-    },
-    {
-      'Grifinória vs. Sonserina': [3, 0],
-      'Grifinória vs. LufaLufa': [1, 1],
-      'Grifinória vs. Corvinal': [3, 0],
-      'Sonserina vs. LufaLufa': [0, 3],
-      'Sonserina vs. Corvinal': [3, 0],
-      'LufaLufa vs. Corvinal': [0, 3]
-    },
-    {
-      'Grifinória vs. Sonserina': [3, 0],
-      'Grifinória vs. LufaLufa': [3, 0],
-      'Grifinória vs. Corvinal': [3, 0],
-      'Sonserina vs. LufaLufa': [0, 3],
-      'Sonserina vs. Corvinal': [3, 0],
-      'LufaLufa vs. Corvinal': [3, 0]
-    }
-  ];
-  
-  const torneio = new MedianaDasMedianas(fasesDePontuacoes);
-  torneio.calcularParaCasa('Grifinória');
-  torneio.calcularParaCasa('Sonserina');
-  torneio.calcularParaCasa('LufaLufa');
-  torneio.calcularParaCasa('Corvinal');
-  
-  const medianaDasMedianasOrdenadas = torneio.obterMedianaDasMedianasOrdenadas();
-  console.log(medianaDasMedianasOrdenadas);
+const medianaDasMedianasOrdenadas = torneio.obterMedianaDasMedianasOrdenadas();
+console.log(medianaDasMedianasOrdenadas);
+
+
