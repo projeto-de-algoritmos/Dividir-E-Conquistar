@@ -1,43 +1,65 @@
   .body {
     font-family: 'harry', sans-serif;
-    background-color: black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4px; /* Espaço entre os blocos, ajuste conforme necessário */
-    height: 635px;
+    background-image: url('../public/midia/hpfundo.png');
+    background-size: cover;
+    background-position: center;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
   }
-  .GryffindorG{
-    background-color: #740001;
-    font-size: 23.7px;
-    display:grid;
-    justify-items: center;
-  }
-  .SlytherinG{
-    background-color: #1a472a;
-    font-size: 23.7px;
-    display:grid;
-    justify-items: center;
-  }
-  .RavenclawG{
-    background-color: #0e1a40;
-    font-size: 23.7px;
-    display:grid;
-    justify-items: center;
-  }
-  .HufflepuffG{
-    background-color: #ecb939;
-    font-size: 23.7px;
-    display:grid;
-    justify-items: center;
-  }
- 
   .contents{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-color:black;
+    border-radius: 30px;
+    width: 500px;
   }
 
-  p{
-    height: 24px;
+  .gerar{
+    margin-bottom: 10px;
+    height: 80px;
+    border-radius: 70px;
+    width: 200px;
+    font-family: 'harry', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: rgb(39, 35, 35);
+    color: azure;
+  }
+
+  .voltar{
+    margin-top: 7px;
+    height: 80px;
+    border-radius: 70px;
+    width: 200px;
+    font-family: 'harry', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: rgb(39, 35, 35);
+    color: azure;
+  }
+
+  .bottom-content{display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('../public/midia/hpfundo.png');
+    background-size: cover;
+    background-position: top;
+    }
+
+  .voltar:hover{
+    background-image: url('../public/midia/hogg.png');
+    background-size: cover;
+    background-position: center; 
+  }
+
+  .gerar:hover{
+    background-image: url('../public/midia/quadri.png');
+    background-size: cover;
+    background-position: center; 
   }
   

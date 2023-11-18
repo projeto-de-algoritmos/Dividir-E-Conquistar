@@ -22,51 +22,52 @@
   background-size: cover; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
 }
-.body {
-  margin-top: 4px;
-  height: 325px;
-  font-family: 'harry', sans-serif;
-  color: white;
-  display: grid;
-  align-self: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px; /* Espaço entre os blocos, ajuste conforme necessário */
-}
-.Gryffindor{
-  background-color: #740001;
-  font-size: 23.7px;
-}
-.Slytherin{
-  background-color: #1a472a;
-  font-size: 23.7px;
-}
-.Ravenclaw{
-  background-color: #0e1a40;
-  font-size: 23.7px;
-}
-.Hufflepuff{
-  background-color: #ecb939;
-  font-size: 23.7px;
-}
 .App-link {
   color: #61dafb;
 }
+.PlacaresCasas{
+  height: 637px;
+  background-image: url('../public/midia/hpfundo.png'); /* Substitua com o caminho da sua imagem */
+  background-size: cover; /* Para cobrir toda a div */
+  background-position: center; /* Centralizar a imagem */
+}
 .buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  align-self: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1px;
 }
-button{
-  margin-left: 15px;
-  margin-bottom: 40px;
-  border-radius: 25px;
-  height: 50px;
+.medmed{
+  height: 100px;
+  border-radius: 90px;
+  width: 200px;
   font-family: 'harry', sans-serif;
-  background-color: rgb(22, 120, 57);
+  font-weight: bolder;
+  font-size: larger;
+  background-color: rgb(39, 35, 35);
   color: azure;
+  margin-top: 200px;
 }
-button:hover{
-  background-color: rgb(66, 162, 99);
+.partidas{
+  height: 100px;
+  border-radius: 90px;
+  width: 200px;
+  font-family: 'harry', sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: rgb(39, 35, 35);
+  color: azure;
+  margin-top: 200px;
+}
+.medmed:hover{
+  background-image: url('../public/midia/medmed.png'); /* Substitua com o caminho da sua imagem */
+  background-size: cover; /* Para cobrir toda a div */
+  background-position: center; /* Centralizar a imagem */
+}
+.partidas:hover{
+  background-image: url('../public/midia/hogg.png'); /* Substitua com o caminho da sua imagem */
+  background-size: cover; /* Para cobrir toda a div */
+  background-position: center; /* Centralizar a imagem */
 }
 
 @keyframes App-logo-spin {

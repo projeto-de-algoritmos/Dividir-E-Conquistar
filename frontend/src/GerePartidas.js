@@ -1,63 +1,42 @@
 import React, { useEffect, useState } from 'react';
 import { fasesDePontuacoes } from './pontuacoes.dto';
-import HeaderComponent from "./HeaderComponente";
+import { Link } from 'react-router-dom';
+import HeaderComponent from './HeaderComponente';
 import './GerePartidas.css';
 
 const GerePartidas = () => {
-  const [faseUm, setFasesDePontuacoesUm] = useState([]);
-  const [faseDois, setFasesDePontuacoesDois] = useState([]);
-  const [faseTres, setFasesDePontuacoesTres] = useState([]);
-  const [faseQuatro, setFasesDePontuacoesQuatro] = useState([]);
+  const [faseAtual, setFaseAtual] = useState(1);
+  const [fasesDePontuacoesAtuais, setFasesDePontuacoesAtuais] = useState([]);
 
   useEffect(() => {
-    setFasesDePontuacoesUm(fasesDePontuacoes[0]); // Ajuste para pegar apenas a primeira posição
-    setFasesDePontuacoesDois(fasesDePontuacoes[1]); // Ajuste para pegar apenas a segunda posição
-    setFasesDePontuacoesTres(fasesDePontuacoes[2]); // Ajuste para pegar apenas a terceira posição]
-    setFasesDePontuacoesQuatro(fasesDePontuacoes[3]); // Ajuste para pegar apenas a quarta posição
-  }, []);
+    setFasesDePontuacoesAtuais(fasesDePontuacoes[faseAtual - 1]); // Ajuste para pegar a fase atual
+  }, [faseAtual]);
+
+  const avancarParaProximaFase = () => {
+    // Aumenta a fase atual
+    setFaseAtual((fase) => fase + 1);
+  };
 
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      <div className="body">
-        <div className="GryffindorG">
-          <p>Fase 1</p>
+      <HeaderComponent />
+      <div className={`body ${faseAtual === 1 ? 'show' : 'hide'}`}>
+          {faseAtual < 4 && (
+          <button className="gerar" onClick={avancarParaProximaFase}>Próxima Fase</button>
+          )}
           <div className="contents">
-            <div>
-              <h2>Fase 1</h2>
-              {Object.entries(faseUm).map(([partida, pontuacao]) => (
-                <div key={partida}>
-                  <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
-                </div>
-              ))}
-            </div>
+            <h2>Fase {faseAtual}</h2>
+            {Object.entries(fasesDePontuacoesAtuais).map(([partida, pontuacao]) => (
+              <div key={partida}>
+                <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
+              </div>
+            ))}
           </div>
-          <button>Gerar Resultado</button>
-        </div>
-        <div className="SlytherinG">
-          <h2>Fase 2</h2>
-          {Object.entries(faseDois).map(([partida, pontuacao]) => (
-                <div key={partida}>
-                  <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
-                </div>
-              ))}
-        </div>
-        <div className="RavenclawG">
-          <h2>Fase 3</h2>
-          {Object.entries(faseTres).map(([partida, pontuacao]) => (
-                <div key={partida}>
-                  <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
-                </div>
-              ))}
-        </div>
-        <div className="HufflepuffG">
-          <h2>Fase 4</h2>
-          {Object.entries(faseQuatro).map(([partida, pontuacao]) => (
-                <div key={partida}>
-                  <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
-                </div>
-              ))}
-        </div>
+      </div>
+      <div className="bottom-content">
+          <Link to="/">
+            <button className="voltar">Voltar para Hogwarts</button>
+          </Link>
       </div>
     </div>
   );
