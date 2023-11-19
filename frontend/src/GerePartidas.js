@@ -24,6 +24,12 @@ const GerePartidas = () => {
           {faseAtual < 4 && (
           <button className="gerar" onClick={avancarParaProximaFase}>Próxima Fase</button>
           )}
+          
+          {faseAtual === 4 && (
+          <Link to="/resultados">
+          <button className='medmed'>Resultados do Torneio</button>
+          </Link>
+          )}
           <div className="contents">
             <h2>Fase {faseAtual}</h2>
             {Object.entries(fasesDePontuacoesAtuais).map(([partida, pontuacao]) => (

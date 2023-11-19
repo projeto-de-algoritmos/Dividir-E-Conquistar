@@ -28,14 +28,13 @@
 .PlacaresCasas{
   height: 637px;
   background-image: url('../public/midia/hpfundo.png'); /* Substitua com o caminho da sua imagem */
-  background-size: cover; /* Para cobrir toda a div */
+  background-size: contain; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
 }
 .buttons{
-  display: grid;
-  align-self: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .medmed{
   height: 100px;
@@ -46,8 +45,9 @@
   font-size: larger;
   background-color: rgb(39, 35, 35);
   color: azure;
-  margin-top: 200px;
+  margin-bottom: 10px;
 }
+
 .partidas{
   height: 100px;
   border-radius: 90px;
@@ -69,6 +69,45 @@
   background-size: cover; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
 }
+
+/* Resultados Torneio*/
+
+.Podium{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.primeiro{
+  background-color: black;
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+.segundo{
+  background-color: black;
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+.terceiro{
+  background-color: black;
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+.quarto{
+  background-color: black;
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+
+/*Fim da Resultados Torneio*/
 
 @keyframes App-logo-spin {
   from {
