@@ -91,47 +91,47 @@
 /* Resultados Torneio*/
 
 .Podium{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-self: center;
+  text-align: center;
+  width: 32%;
+  border: 2px solid rgb(234, 232, 232);
+  border-radius: 20px;
 }
 
 .primeiro{
-  background-color: azure;
+  background-color: rgb(240,255,255, 0.8);
   color: black;
   border-radius: 30px;
   width: 400px;
-  height: 200px;
+  height: 250px;
   text-align: center;
 }
 .cedrico{
   color: black;
   text-align: center;
 }
-.segundo{
-  background-color: azure;
-  color: black;
-  border-radius: 30px;
-  width: 400px;
-  height: 200px;
-  text-align: center;
+
+.HeaderResult{
+  background-image: url('../public/midia/profeta-diario.jpg'); /* Substitua com o caminho da sua imagem */
+  background-size: contain; /* Para cobrir toda a div */
+  background-position: center; /* Centralizar a imagem */
+  width: 100%;
+  height: 127px;
 }
-.terceiro{
-  background-color: azure;
-  color: black;
-  border-radius: 30px;
-  width: 400px;
-  height: 200px;
-  text-align: center;
+
+.bodyResult{
+  background-image: url('../public/midia/fundo-podio.jpg');
+  background-size: cover;
+  background-position: center;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
 }
-.quarto{
-  background-color: azure;
-  color: black;
-  border-radius: 30px;
-  width: 400px;
-  height: 200px;
-  text-align: center;
-}
+
 
 /*Fim da Resultados Torneio*/
 

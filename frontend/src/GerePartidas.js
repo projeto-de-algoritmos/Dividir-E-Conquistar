@@ -53,25 +53,25 @@ const GerePartidas = () => {
       <HeaderComponent />
       <div className="body">
         <div className="contents">
-          <div>
-          <h2 className="primeiro">Cedrico Diggory - Escola de Magia e Bruxaria de Hogwarts (Hufflepuff)</h2>
+          <div className="primeiro">
+          <h2 className="cedrico">Cedrico Diggory - Escola de Magia e Bruxaria de Hogwarts (Hufflepuff)</h2>
             <p className="cedrico">{resultadoCedrico}</p>
-            <p className="cedrico"> Pontuação final: {torneioCedrico}</p>
+            <h4 className="cedrico"> Pontuação final: {torneioCedrico}</h4>
           </div>
-          <div>
-          <h2 className="primeiro">Harry Potter - Escola de Magia e Bruxaria de Hogwarts (Gryffindor)</h2>
+          <div className="primeiro">
+          <h2 className="cedrico">Harry Potter - Escola de Magia e Bruxaria de Hogwarts (Gryffindor)</h2>
             <p className="cedrico">{resultadoHarry}</p>
-            <p className="cedrico">Pontuação final: {torneioHarry}</p>
+            <h4 className="cedrico">Pontuação final: {torneioHarry}</h4>
           </div>
-          <div>
-          <h2 className="primeiro">Fleur Delacour - Academia de Magia Beauxbatons</h2>
+          <div className="primeiro">
+          <h2 className="cedrico">Fleur Delacour - Academia de Magia Beauxbatons</h2>
             <p className="cedrico">{resultadoFleur}</p>
-            <p className="cedrico">Pontuação final: {torneioFleur}</p>
+            <h4 className="cedrico">Pontuação final: {torneioFleur}</h4>
           </div>
-          <div>
-          <h2 className="primeiro">Vítor Krum - Instituto Durmstrang</h2>
+          <div className="primeiro">
+          <h2 className="cedrico">Vítor Krum - Instituto Durmstrang</h2>
             <p className="cedrico">{resultadoVitor}</p>
-            <p className="cedrico">Pontuação final: {torneioVitor}</p>
+            <h4 className="cedrico">Pontuação final: {torneioVitor}</h4>
           </div>
         </div>
       </div>
