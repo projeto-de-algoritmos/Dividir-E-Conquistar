@@ -10,7 +10,7 @@ const GerePartidas = () => {
   const [torneioFleur, setTorneioFleur] = useState(1);
   const [torneioVitor, setTorneioVitor] = useState(1);
 
-  const textos = ['Dragões', 'O Lago', 'O Labirinto'];
+  const textos = ['Torneio de Quadribol', 'Disputa de vôos em vassoura', 'Dragões', 'O Lago', 'O Labirinto'];
   const resultadoCedrico = resultadoUm.map((valor, index) => (
     <React.Fragment key={index}>
       <span className="cedrico">{`${index + 1}ª Tarefa: ${textos[index]} - `}</span>

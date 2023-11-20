@@ -66,7 +66,7 @@ function gerarValoresAleatorios(numRodadas) {
   return valoresAleatorios;
 }
 
-var numRodadas = 3
+var numRodadas = 5
 var resultadoUm = gerarValoresAleatorios(numRodadas);
 console.log("ARRAY: ", resultadoUm)
 var resultadoDois = gerarValoresAleatorios(numRodadas);
