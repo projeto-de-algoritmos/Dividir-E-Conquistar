@@ -102,5 +102,5 @@ Para utilização do projeo acesse a página localmente.
 
   | Conteúdo | Vídeo                                                                                         |
   | -------- | --------------------------------------------------------------------------------------------- |
-  | Módulo 4 | [URL do vídeo](|
+  | Módulo 4 | [URL do vídeo](https://drive.google.com/file/d/1GWmV_4VZWQNVW09eU4b3iBIM17dDw3Qc/view?usp=sharing)|
  
