@@ -38,6 +38,12 @@ Somarão um total de pontos e, a partir da mediana das medianas, irão obter a s
 
 ### Interface: 
 
+![image](https://github.com/projeto-de-algoritmos/MedianaDasMedianas/assets/54143767/44ddeb00-bdb3-46df-a4fc-6293d5d4a0e1)
+![image](https://github.com/projeto-de-algoritmos/MedianaDasMedianas/assets/54143767/4cde1f3f-9338-4f8a-a6f3-c7ce4d15a513)
+![image](https://github.com/projeto-de-algoritmos/MedianaDasMedianas/assets/54143767/bca7734c-ceb0-43c6-9d83-5fdf41a925be)
+
+
+
 ## ➿ Execução do Projeto
 
 ### ⚠️ Pré-Requisitos 
