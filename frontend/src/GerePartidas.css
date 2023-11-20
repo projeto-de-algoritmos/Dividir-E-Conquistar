@@ -1,6 +1,6 @@
   .body {
     font-family: 'harry', sans-serif;
-    background-image: url('../public/midia/hpfundo.png');
+    background-image: url('../public/midia/fundo-participantes.jpg');
     background-size: cover;
     background-position: center;
     color: azure;
@@ -11,12 +11,9 @@
     height: 550px;
   }
   .contents{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:black;
-    border-radius: 30px;
-    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 
   .gerar{
@@ -46,9 +43,7 @@
   .bottom-content{display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url('../public/midia/hpfundo.png');
-    background-size: cover;
-    background-position: top;
+    background-color: black;
     }
 
   .voltar:hover{

@@ -20,28 +20,20 @@ const GerePartidas = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={`body ${faseAtual === 1 ? 'show' : 'hide'}`}>
-          {faseAtual < 4 && (
-          <button className="gerar" onClick={avancarParaProximaFase}>Próxima Fase</button>
-          )}
-          
-          {faseAtual === 4 && (
-          <Link to="/resultados">
-          <button className='medmed'>Resultados do Torneio</button>
-          </Link>
-          )}
-          <div className="contents">
-            <h2>Fase {faseAtual}</h2>
-            {Object.entries(fasesDePontuacoesAtuais).map(([partida, pontuacao]) => (
-              <div key={partida}>
-                <p>{partida}: {pontuacao[0]} - {pontuacao[1]}</p>
-              </div>
-            ))}
-          </div>
+      <div className="body">
+        <div className="contents">
+            <h2 className="primeiro">Primeiro</h2>
+            <h2 className="segundo">Segundo</h2>
+            <h2 className="terceiro">Terceiro</h2>
+            <h2 className="quarto">Quarto</h2>
+        </div>
       </div>
       <div className="bottom-content">
           <Link to="/">
             <button className="voltar">Voltar para Hogwarts</button>
+          </Link>
+          <Link to="/resultados">
+            <button className="voltar">Gerar Resultado do Torneio</button>
           </Link>
       </div>
     </div>

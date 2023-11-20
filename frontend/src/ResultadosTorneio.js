@@ -7,12 +7,12 @@ import { medianaDasMedianasOrdenadas } from './medianadasmedianas';
 
 const ResultadosTorneio = () => {
 
-  const [resultado, setResultado] = useState([]);
+  // const [resultado, setResultado] = useState([]);
 
-  useEffect(() => {
-    setResultado(medianaDasMedianasOrdenadas);
-    console.log("RESULTADO: ", medianaDasMedianasOrdenadas);
-  }, []);
+  // useEffect(() => {
+  //   setResultado(medianaDasMedianasOrdenadas);
+  //   console.log("RESULTADO: ", medianaDasMedianasOrdenadas);
+  // }, []);
 
   return (
     <div className="ResultadosTorneio">

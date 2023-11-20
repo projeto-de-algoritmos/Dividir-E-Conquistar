@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: black;
+  border-color: black;
 
 }
 
@@ -15,21 +15,40 @@
   }
 }
 
+/*CSS Header Component*/
 .App-header {
   height: 125px;
   display: flex;
-  background-image: url('../public/midia/harry.jpg'); /* Substitua com o caminho da sua imagem */
+  background-image: url('../public/midia/tribruxodef.png'); /* Substitua com o caminho da sua imagem */
   background-size: cover; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
 }
+/*Fim da Header*/
 .App-link {
   color: #61dafb;
 }
+
+.text-db{
+  width: 400px;
+  border-radius: 20px;
+  color: azure;
+  padding-right: 10px;
+}
+.dumb{
+  background-image: url('../public/midia/dumbledore.png'); /* Substitua com o caminho da sua imagem */
+  background-position: center; /* Centralizar a imagem */
+  width: 300px;
+  height: 600px;
+
+
+}
 .PlacaresCasas{
   height: 637px;
-  background-image: url('../public/midia/hpfundo.png'); /* Substitua com o caminho da sua imagem */
-  background-size: contain; /* Para cobrir toda a div */
-  background-position: center; /* Centralizar a imagem */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 .buttons{
   display: flex;
@@ -55,9 +74,8 @@
   font-family: 'harry', sans-serif;
   font-weight: bolder;
   font-size: larger;
-  background-color: rgb(39, 35, 35);
+  background-color: rgb(23, 7, 73);
   color: azure;
-  margin-top: 200px;
 }
 .medmed:hover{
   background-image: url('../public/midia/medmed.png'); /* Substitua com o caminho da sua imagem */
@@ -65,7 +83,7 @@
   background-position: center; /* Centralizar a imagem */
 }
 .partidas:hover{
-  background-image: url('../public/midia/hogg.png'); /* Substitua com o caminho da sua imagem */
+  background-image: url('../public/midia/tribruxo.jpeg'); /* Substitua com o caminho da sua imagem */
   background-size: cover; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
 }
@@ -79,28 +97,32 @@
 }
 
 .primeiro{
-  background-color: black;
+  background-color: azure;
+  color: black;
   border-radius: 30px;
   width: 400px;
   height: 200px;
   text-align: center;
 }
 .segundo{
-  background-color: black;
+  background-color: azure;
+  color: black;
   border-radius: 30px;
   width: 400px;
   height: 200px;
   text-align: center;
 }
 .terceiro{
-  background-color: black;
+  background-color: azure;
+  color: black;
   border-radius: 30px;
   width: 400px;
   height: 200px;
   text-align: center;
 }
 .quarto{
-  background-color: black;
+  background-color: azure;
+  color: black;
   border-radius: 30px;
   width: 400px;
   height: 200px;
