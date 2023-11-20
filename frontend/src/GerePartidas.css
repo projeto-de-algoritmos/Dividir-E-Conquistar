@@ -52,9 +52,5 @@
     background-position: center; 
   }
 
-  .gerar:hover{
-    background-image: url('../public/midia/quadri.png');
-    background-size: cover;
-    background-position: center; 
-  }
+
   

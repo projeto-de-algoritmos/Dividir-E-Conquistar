@@ -67,12 +67,24 @@ function gerarValoresAleatorios(numRodadas) {
 }
 
 var numRodadas = 3
-var resultados = gerarValoresAleatorios(numRodadas);
-console.log("ARRAY: ", resultados)
+var resultadoUm = gerarValoresAleatorios(numRodadas);
+console.log("ARRAY: ", resultadoUm)
+var resultadoDois = gerarValoresAleatorios(numRodadas);
+console.log("ARRAY: ", resultadoDois)
+var resultadoTres = gerarValoresAleatorios(numRodadas);
+console.log("ARRAY: ", resultadoTres)
+var resultadoQuatro = gerarValoresAleatorios(numRodadas);
+console.log("ARRAY: ", resultadoQuatro)
 
-const torneio = medianaDasMedianas(resultados)
+const torneioUm = medianaDasMedianas(resultadoUm)
+const torneioDois = medianaDasMedianas(resultadoDois)
+const torneioTres = medianaDasMedianas(resultadoTres)
+const torneioQuatro = medianaDasMedianas(resultadoQuatro)
 
-console.log("A mediana das medianas desse array é: ", torneio)
+console.log("Array Um: ", torneioUm)
+console.log("Array Dois: ", torneioDois)
+console.log("Array Tres: ", torneioTres)
+console.log("Array Quatro: ", torneioQuatro)
 
 
-
+module.exports = {resultadoUm, resultadoDois, resultadoTres, resultadoQuatro, torneioUm, torneioDois, torneioTres, torneioQuatro};
