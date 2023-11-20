@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
 .App {
   text-align: center;
   border-color: black;
@@ -17,11 +19,18 @@
 
 /*CSS Header Component*/
 .App-header {
-  height: 125px;
-  display: flex;
-  background-image: url('../public/midia/tribruxodef.png'); /* Substitua com o caminho da sua imagem */
+  padding-top: 20px;
+  background: black;
   background-size: cover; /* Para cobrir toda a div */
   background-position: center; /* Centralizar a imagem */
+  font-family: 'Cinzel Decorative', serif;
+  color: #fff;
+  text-align: center;
+}
+
+.App-header h2{
+  color: #b2b2b2;
+  margin: 0;
 }
 /*Fim da Header*/
 .App-link {
@@ -39,16 +48,16 @@
   background-position: center; /* Centralizar a imagem */
   width: 300px;
   height: 600px;
-
-
+  
 }
-.PlacaresCasas{
-  height: 637px;
+.placares{
+  height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: black;
+  cursor: url('../public/midia/varinha.png'), auto;
 }
 .buttons{
   display: flex;
@@ -68,14 +77,14 @@
 }
 
 .partidas{
-  height: 100px;
-  border-radius: 90px;
-  width: 200px;
-  font-family: 'harry', sans-serif;
+  padding: 16px 12px;
+  font-family: 'Cinzel Decorative', sans-serif;
   font-weight: bolder;
-  font-size: larger;
-  background-color: rgb(23, 7, 73);
+  font-size: 18px;
+  background-color: rgb(15, 50, 48);
   color: azure;
+  border: 0;
+  border-radius: 8px;
 }
 .medmed:hover{
   background-image: url('../public/midia/medmed.png'); /* Substitua com o caminho da sua imagem */
@@ -83,9 +92,8 @@
   background-position: center; /* Centralizar a imagem */
 }
 .partidas:hover{
-  background-image: url('../public/midia/tribruxo.jpeg'); /* Substitua com o caminho da sua imagem */
-  background-size: cover; /* Para cobrir toda a div */
-  background-position: center; /* Centralizar a imagem */
+  background-color: rgb(48, 112, 109);
+  cursor: pointer;
 }
 
 /* Resultados Torneio*/
@@ -100,15 +108,15 @@
 }
 
 .primeiro{
-  background-color: rgb(240,255,255, 0.8);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   border-radius: 30px;
   width: 400px;
   height: 250px;
   text-align: center;
 }
 .cedrico{
-  color: black;
+  color: #b2b2b2;
   text-align: center;
 }
 
