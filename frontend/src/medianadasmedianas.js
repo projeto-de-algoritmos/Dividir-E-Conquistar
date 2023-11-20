@@ -66,14 +66,8 @@ function gerarValoresAleatorios(numRodadas) {
   return valoresAleatorios;
 }
 
-function preencherVetor(torneio) {
-  const vetor = [];
-
-  for (let i = 0; i < 4; i++) {
-      // Simplesmente adiciona um valor ao vetor
-      vetor.push(torneio);  // Neste exemplo, estou preenchendo com números de 1 até o tamanho do vetor
-  }
-
+function preencherVetor(torneio, vetor) {
+  vetor.push(torneio);
   return vetor;
 }
 
@@ -87,17 +81,16 @@ function ordenarValores(vetorPreenchido) {
   // Retorna o array ordenado
   return vetorPreenchido;
 }
-
+var vetor = [];
 var numRodadas = 3
 var resultados = gerarValoresAleatorios(numRodadas);
 console.log("ARRAY: ", resultados)
 
-
-torneio = medianaDasMedianas(resultados)
+const torneio = medianaDasMedianas(resultados)
 
 console.log("A mediana das medianas desse array é: ", torneio)
 
-const vetorPreenchido = preencherVetor(torneio);
+const vetorPreenchido = preencherVetor(torneio, vetor);
 console.log(vetorPreenchido);
 
 let valoresOrdenados = ordenarValores(vetorPreenchido);
