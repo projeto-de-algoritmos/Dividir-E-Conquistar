@@ -66,22 +66,6 @@ function gerarValoresAleatorios(numRodadas) {
   return valoresAleatorios;
 }
 
-function preencherVetor(torneio, vetor) {
-  vetor.push(torneio);
-  return vetor;
-}
-
-function ordenarValores(vetorPreenchido) {
-
-  // Usa o método sort para ordenar os valores
-  vetorPreenchido.sort(function (x, y) {
-    return x - y;
-  });
-
-  // Retorna o array ordenado
-  return vetorPreenchido;
-}
-var vetor = [];
 var numRodadas = 3
 var resultados = gerarValoresAleatorios(numRodadas);
 console.log("ARRAY: ", resultados)
@@ -89,12 +73,6 @@ console.log("ARRAY: ", resultados)
 const torneio = medianaDasMedianas(resultados)
 
 console.log("A mediana das medianas desse array é: ", torneio)
-
-const vetorPreenchido = preencherVetor(torneio, vetor);
-console.log(vetorPreenchido);
-
-let valoresOrdenados = ordenarValores(vetorPreenchido);
-console.log(valoresOrdenados);
 
 
 
