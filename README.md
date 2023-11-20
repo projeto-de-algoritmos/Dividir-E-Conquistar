@@ -1,4 +1,4 @@
-# Harry Potter - Torneio Tribruxo 
+# D&C - Harry Potter - Torneio Tribruxo 
 
 ## Algoritmos Ambiciosos - Mediana das Medianas
 
