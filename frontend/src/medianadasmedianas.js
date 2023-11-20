@@ -1,8 +1,8 @@
 // Função para calcular a mediana das medianas
 function medianaDasMedianas(arr) {
   const grupos = [];
-  for (let i = 0; i < arr.length; i += 5) {
-      grupos.push(arr.slice(i, i + 5));
+  for (let i = 0; i < arr.length; i += 3) {
+      grupos.push(arr.slice(i, i + 3));
   }
 
   const medianas = grupos.map(grupo => {
@@ -21,8 +21,8 @@ function selecionar(arr, k) {
   }
 
   const grupos = [];
-  for (let i = 0; i < arr.length; i += 5) {
-      grupos.push(arr.slice(i, i + 5));
+  for (let i = 0; i < arr.length; i += 3) {
+      grupos.push(arr.slice(i, i + 3));
   }
 
   const medianas = grupos.map(grupo => {
@@ -66,26 +66,29 @@ function gerarValoresAleatorios(numRodadas) {
   return valoresAleatorios;
 }
 
-function ordenarValores(a, b, c, d) {
-  // Cria um array com os quatro valores
-  let valores = [a, b, c, d];
+function preencherVetor(torneio) {
+  const vetor = [];
+
+  for (let i = 0; i < 4; i++) {
+      // Simplesmente adiciona um valor ao vetor
+      vetor.push(torneio);  // Neste exemplo, estou preenchendo com números de 1 até o tamanho do vetor
+  }
+
+  return vetor;
+}
+
+function ordenarValores(vetorPreenchido) {
 
   // Usa o método sort para ordenar os valores
-  valores.sort(function (x, y) {
+  vetorPreenchido.sort(function (x, y) {
     return x - y;
   });
 
   // Retorna o array ordenado
-  return valores;
+  return vetorPreenchido;
 }
 
-// Exemplo de uso
-let valoresOrdenados = ordenarValores(4, 2, 7, 1);
-console.log(valoresOrdenados);
-
-
-// Exemplo de uso da função
-var numRodadas = 5
+var numRodadas = 3
 var resultados = gerarValoresAleatorios(numRodadas);
 console.log("ARRAY: ", resultados)
 
@@ -93,3 +96,12 @@ console.log("ARRAY: ", resultados)
 torneio = medianaDasMedianas(resultados)
 
 console.log("A mediana das medianas desse array é: ", torneio)
+
+const vetorPreenchido = preencherVetor(torneio);
+console.log(vetorPreenchido);
+
+let valoresOrdenados = ordenarValores(vetorPreenchido);
+console.log(valoresOrdenados);
+
+
+
