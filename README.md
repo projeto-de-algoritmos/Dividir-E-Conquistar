@@ -1,10 +1,10 @@
-# Harry Potter - O Torneio de Quadribol
+# Harry Potter - Torneio Tribruxo 
 
 ## Algoritmos Ambiciosos - Mediana das Medianas
 
 
 <p align="center">
-  <img width="500" src="https://pa1.aminoapps.com/6961/e37b053fa8615fc6862171aea77c3c27cf72f501r1-500-149_hq.gif">
+  <img width="500" src="https://3.bp.blogspot.com/-kIt4TIULv6k/U5PJaOFMibI/AAAAAAAAFSg/05nOR-5P584/s1600/tumblr_m34cqgDMfK1r189pp.gif">
 </p>
 
 
@@ -19,18 +19,22 @@
 
 <p> Descrição do projeto </p>
 
-O projeto tem o intuito de, utilizando Harry Potter como contexto, criar um torneio de quadribol, onde serão disponibilizadas quatro opções de times - as casas de Hogwarts Grifinória, Sonserina, Corvinal e Lufa Lufa. Neste torneio, ocorrerão quatro fases:
-- Equipe x Equipe
-- Dupla x Dupla
-- Quarteto x Quarteto
-- Equipe x Equipe
+O Torneio Tribruxo (no Brasil), Torneio dos Três Feiticeiros (em Portugal) ou Triwizard Cup (em inglês), é um campeonato entre as três maiores escolas de magia da Europa: Academia de Magia Beauxbatons, Escola de Magia e Bruxaria de Hogwarts e Instituto Durmstrang,cada escola sendo representada por um Campeão. Os campeões realizam, ao longo do ano, três tarefas - tradicionalmente julgadas pelos diretores das escolas concorrentes - diferentes projetadas para testar a habilidade mágica, inteligência e coragem dos campeões. Os Campeões competem por honra e glória de vencer o Torneio, para a Taça Tribruxo, e um prêmio monetário de 1000 galeões. O primeiro torneio foi realizado em algum momento no final dos século XII ou do século XII. Nessa edição, devido a comemoração secular do torneio, foram adicionadas duas fases bônus para classificar os participantes numa pré-seleção para ver quem teria preferência na largada das duas primeiras fases.
 
-As pontuações se darão da forma:
-- Venceu: 3 pontos
-- Empate: 1 ponto (para cada equipe)
-- Perdeu: 0 pontos
+Sendo assim, o projeto tem o intuito de  criar um torneio, onde, em cada uma das fases: 
+1. Torneio de Quadribol com as equipes (Rodada classificatória para saber quem irá ter preferência na etapa 3)
+2. Disputa de vôos em vassoura (Rodada classificatória para saber quem irá ter preferência na etapa 4)
+3. Dragões
+4. O Lago
+5. O Labirinto
 
-Ao final do torneio, o algoritmo de Mediana das Medianas é aplicado para se descobrir a média de pontos de cada casa, e, a partir disso, conseguir se chegar a um vencedor - a equipe que possuir mais pontos.
+Os participantes escolhidos pela taça 
+- Cedrico Diggory
+- Fleur Delacour
+- Vítor Krum
+- E o acidental, Harry Potter
+
+Somarão um total de pontos e, a partir da mediana das medianas, irão obter a sua melhor pontuação para saber se ganharam o torneio ou não.
 
 ### Interface: 
 
@@ -76,7 +80,7 @@ $ npm install react react-dom
 #### Entre no caminho da pasta
 
 ```bash
-$ cd .\MedianaDasMedianas
+$ cd .\MedianaDasMedianas\frontend\src
 ```
 
 #### Execute o projeto 
